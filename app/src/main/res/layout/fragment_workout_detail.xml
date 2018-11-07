@@ -12,13 +12,11 @@
         android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearance"
-        android:text="@string/workout_title" />
+        android:textAppearance="?android:attr/textAppearance" />
 
     <TextView
         android:id="@+id/textDescription"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/workout_description"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
