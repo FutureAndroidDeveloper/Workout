@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class DetailActivity extends AppCompatActivity {
+    public static final String EXTRA_WORKOUT_ID = "workoutId";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -11,6 +12,8 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         WorkoutDetailFragment fragment = (WorkoutDetailFragment) getSupportFragmentManager().findFragmentById(R.id.detail_frag);
-        fragment.setWorkoutId(1);
+        int workoutId = (int) getIntent().getExtras().get(EXTRA_WORKOUT_ID);
+
+        fragment.setWorkoutId(workoutId);
     }
 }
